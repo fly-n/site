@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "../components/navbar";
 
 const Home: NextPage = () => {
@@ -14,8 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <main className="h-screen w-screen">
         <Navbar />
-        <div className="flex items-center justify-evenly p-8">
-          <div className="flex w-[45vw] min-w-[280px] flex-col gap-4">
+        <div className="flex flex-col items-center justify-center gap-8 p-8 md:flex-row md:justify-evenly">
+          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 md:items-start">
             <h1 className="text-3xl font-bold">
               Travel made easy - from doorstep to destination
               {/* From your front door to your dream destination */}

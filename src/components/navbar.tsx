@@ -1,21 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [device, setDevice] = useState("" as "android" | "ios" | "web");
+  // const [device, setDevice] = useState("" as "android" | "ios" | "web");
 
-  useEffect(() => {
-    if (window.navigator.userAgent.includes("Android")) {
-      setDevice("android");
-    } else if (
-      window.navigator.userAgent.includes("iPhone" || "iPad" || "iPod" || "Mac")
-    ) {
-      setDevice("ios");
-    } else {
-      setDevice("web");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.navigator.userAgent.includes("Android")) {
+  //     setDevice("android");
+  //   } else if (
+  //     window.navigator.userAgent.includes("iPhone" || "iPad" || "iPod" || "Mac")
+  //   ) {
+  //     setDevice("ios");
+  //   } else {
+  //     setDevice("web");
+  //   }
+  // }, []);
 
   return (
     <nav className="flex flex-wrap items-center justify-between bg-white p-4 lg:px-8">
