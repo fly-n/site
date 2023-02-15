@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="flex flex-wrap items-center justify-between bg-white p-4 lg:px-8">
       <Link href="/">
         <Image
-          src="/logo.jpeg"
+          src="/logo.webp"
           alt="logo"
           width={100}
           height={45}
