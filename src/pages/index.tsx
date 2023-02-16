@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                 src="/googleplay.webp"
                 alt="google play"
                 width={200}
-                height={56}
+                height={59}
                 className="pt-4"
               />
             </a>
