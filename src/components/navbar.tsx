@@ -18,14 +18,14 @@ export default function Navbar() {
   // }, []);
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-white p-4 lg:px-8">
+    <nav className="relative z-20 flex w-full flex-wrap items-center justify-between bg-white p-4 shadow-md shadow-blue-700/90 drop-shadow-xl">
       <Link href="/">
         <Image
           src="/logo.webp"
           alt="logo"
           width={100}
           height={45}
-          className="flex flex-shrink-0 items-center text-white"
+          className="flex flex-shrink-0 items-center p-2 text-white"
         />
       </Link>
       {/* {device === "ios" ? (

@@ -11,10 +11,10 @@ const Home: NextPage = () => {
         <meta name="description" content="Welcome to fly-n" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-screen w-screen">
+      <main className="min-h-screen w-full">
         <Navbar />
-        <div className="flex flex-col items-center justify-center gap-8 p-8 md:flex-row md:justify-evenly">
-          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 md:items-start">
+        <section className="flex flex-col items-center justify-center gap-8 bg-blue-500 px-8 pb-8 pt-4 md:flex-row md:justify-evenly">
+          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 pt-4 text-white md:items-start md:py-16">
             <h1 className="text-3xl font-bold">
               Travel made easy - from doorstep to destination
               {/* From your front door to your dream destination */}
@@ -38,8 +38,21 @@ const Home: NextPage = () => {
               />
             </a>
           </div>
-          <Image src="/app.webp" alt="hero" width={275} height={568} />
-        </div>
+          <div className="h-80 overflow-visible">
+            <Image src="/app.webp" alt="hero" width={275} height={568} />
+          </div>
+        </section>
+        {/* <section className="flex flex-col items-center justify-center gap-8 bg-blue-50 px-8 pb-8 pt-4 md:flex-row md:justify-evenly">
+          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 pt-4 md:items-start md:py-16">
+            <h1 className="text-3xl font-bold text-blue-500">Features</h1>
+            <h2 className="text-xl font-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              minima laborum dicta molestias iusto similique sunt modi sequi
+              explicabo nobis. Sequi, libero voluptates temporibus rem dolores
+            </h2>
+          </div>
+          <div className="h-80 w-[275px] overflow-visible"></div>
+        </section> */}
       </main>
     </>
   );
