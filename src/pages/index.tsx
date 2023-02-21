@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import Carousel from "../components/carousel";
 
 const Home: NextPage = () => {
   return (
@@ -39,11 +40,11 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className="h-80 overflow-visible">
-            <Image src="/app.webp" alt="hero" width={275} height={568} />
+            <Carousel />
           </div>
         </section>
-        {/* <section className="flex flex-col items-center justify-center gap-8 bg-blue-50 px-8 pb-8 pt-4 md:flex-row md:justify-evenly">
-          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 pt-4 md:items-start md:py-16">
+        {/* <section className="flex flex-col items-center justify-center gap-8 bg-blue-50 px-8 pt-[13rem] pb-8 md:flex-row md:justify-evenly md:pt-0">
+          <div className="flex w-[45vw] min-w-[280px] flex-col items-center gap-4 md:items-start md:py-16">
             <h1 className="text-3xl font-bold text-blue-500">Features</h1>
             <h2 className="text-xl font-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
